@@ -1,0 +1,162 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Scripts", "Synapse")
+
+--Dahood
+local Main = Window:NewTab("Dahood")
+local MainSection = Main:NewSection("Dahood")
+
+MainSection:NewButton("SwagMode", "", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/lerkermer/lua-projects/master/SwagModeV002"))()
+end)
+
+MainSection:NewButton("Destiny", "", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/compwnter/destiny/main/loader'))();
+end)
+
+MainSection:NewButton("Raycodex", "", function()
+    loadstring(game:GetObjects("rbxassetid://5812737894" )[1].Source)()
+end)
+
+MainSection:NewButton("Nova X", "", function()
+    loadstring(game:HttpGet("https://icxy.xyz/NovaGui/NovaGui", true))()
+end)
+
+MainSection:NewButton("Hood Shark", "", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/vgVZ5JWN'))();
+end)
+
+MainSection:NewButton("Fadded", "", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/NighterEpic/Faded/main/YesEpic", true))()
+end)
+
+MainSection:NewButton("Arctic", "", function()
+    loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/PolarWasHere/Arctic/main/Arctic"))()
+end)
+
+
+
+
+--Dollhouse
+local Doll = Window:NewTab("Dollhouse")
+local DollSection = Doll:NewSection("Dollhouse")
+
+DollSection:NewButton("Riptide", "", function()
+    loadstring(game:HttpGetAsync('https://riptxde.dev/u/hub/script.lua'))()
+end)
+
+DollSection:NewButton("Rj Dupe", "fasted dupe", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/CK103ejE'))()
+end)
+
+DollSection:NewButton("Boombox Fling", "", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/9bLdihSP'))()
+end)
+
+DollSection:NewButton("Auto Valk", "Places valk on ur head and keeps it there", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/tkRQ57pa'))()
+end)
+
+
+
+
+--Fe admin
+local Admin = Window:NewTab("Fe Admin")
+local AdminSection = Admin:NewSection("Fe Admin")
+
+AdminSection:NewButton("Fate", "", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))()
+end)
+
+AdminSection:NewButton("CMD X", "", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source', true))()
+end)
+
+
+
+
+--Other
+local Other = Window:NewTab("Other")
+local OtherSection = Other:NewSection("Other scripts")
+
+OtherSection:NewButton("Ragdoll", "", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/martinelcrac/cryptonichub/main/Ragdollengine.lua'))()
+end)
+
+OtherSection:NewButton("Chaos", "", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/1111-ssss/Chaos_Script/main/Chaos_script.txt'))()
+end)
+
+OtherSection:NewButton("Invisible Boombox", "Da hood", function()
+    game:GetService("Players").LocalPlayer.Character:FindFirstChild("BOOMBOXHANDLE"):Destroy()
+end)
+
+OtherSection:NewButton("v sim", "", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/zt0V6Rg2'))()
+end)
+
+
+OtherSection:NewToggle("120 walkspeed", "", function(state)
+    if state then
+        getgenv().WalkSpeedValue = 120; --set your desired walkspeed here
+local Player = game:service'Players'.LocalPlayer;
+Player.Character.Humanoid:GetPropertyChangedSignal'WalkSpeed':Connect(function()
+Player.Character.Humanoid.WalkSpeed = getgenv().WalkSpeedValue;
+end)
+Player.Character.Humanoid.WalkSpeed = getgenv().WalkSpeedValue;
+    else
+        getgenv().WalkSpeedValue = 16; --set your desired walkspeed here
+local Player = game:service'Players'.LocalPlayer;
+Player.Character.Humanoid:GetPropertyChangedSignal'WalkSpeed':Connect(function()
+Player.Character.Humanoid.WalkSpeed = getgenv().WalkSpeedValue;
+end)
+Player.Character.Humanoid.WalkSpeed = getgenv().WalkSpeedValue;
+    end
+end)
+
+OtherSection:NewToggle("50 walkspeed", "", function(state)
+    if state then
+        getgenv().WalkSpeedValue = 50; --set your desired walkspeed here
+local Player = game:service'Players'.LocalPlayer;
+Player.Character.Humanoid:GetPropertyChangedSignal'WalkSpeed':Connect(function()
+Player.Character.Humanoid.WalkSpeed = getgenv().WalkSpeedValue;
+end)
+Player.Character.Humanoid.WalkSpeed = getgenv().WalkSpeedValue;
+    else
+        getgenv().WalkSpeedValue = 16; --set your desired walkspeed here
+local Player = game:service'Players'.LocalPlayer;
+Player.Character.Humanoid:GetPropertyChangedSignal'WalkSpeed':Connect(function()
+Player.Character.Humanoid.WalkSpeed = getgenv().WalkSpeedValue;
+end)
+Player.Character.Humanoid.WalkSpeed = getgenv().WalkSpeedValue;
+    end
+end)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
