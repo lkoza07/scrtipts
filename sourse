@@ -71,6 +71,10 @@ AdminSection:NewButton("CMD X", "", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source', true))()
 end)
 
+AdminSection:NewButton("IY", "", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/DSaCQud7', true))()
+end)
+
 
 
 
@@ -94,6 +98,17 @@ OtherSection:NewButton("v sim", "", function()
     loadstring(game:HttpGet('https://pastebin.com/raw/zt0V6Rg2'))()
 end)
 
+OtherSection:NewButton("Korblox & Headless", "NOT FE", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/8cM96TDW'))()
+end)
+
+OtherSection:NewButton("Headless", "NOT FE", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/Bh8PTLpv'))()
+end)
+
+OtherSection:NewButton("Korblox", "NOT FE", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/MankQPX0'))()
+end)
 
 OtherSection:NewToggle("120 walkspeed", "", function(state)
     if state then
@@ -130,7 +145,6 @@ end)
 Player.Character.Humanoid.WalkSpeed = getgenv().WalkSpeedValue;
     end
 end)
-
 
 
 
