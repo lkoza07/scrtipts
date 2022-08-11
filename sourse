@@ -76,7 +76,7 @@ AdminSection:NewButton("IY", "", function()
 end)
 
 AdminSection:NewButton("OP", "skidded", function()
-   loadstring(game:HttpGet("https://pastebin.com/9srpYLnH"))()
+   loadstring(game:HttpGet("https://pastebin.com/raw/9srpYLnH"))()
 end)
 
 
