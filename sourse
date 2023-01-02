@@ -40,6 +40,17 @@ end)
 local Doll = Window:NewTab("Dollhouse")
 local DollSection = Doll:NewSection("Dollhouse")
 
+DollSection:NewButton("Claim x10", "execute before clicking the claim button", function()
+    for i = 1, 1000 do
+   for i = 1, 100 do
+       for i = 1, 10 do
+           game.ReplicatedStorage.ClaimReward:FireServer()
+       end
+   end
+end
+end)
+
+
 DollSection:NewButton("Riptide", "", function()
     loadstring(game:HttpGetAsync('https://riptxde.dev/u/hub/script.lua'))()
 end)
@@ -75,7 +86,7 @@ AdminSection:NewButton("IY", "", function()
     loadstring(game:HttpGet('https://pastebin.com/raw/DSaCQud7', true))()
 end)
 
-AdminSection:NewButton("OP", "skidded", function()
+AdminSection:NewButton("OP", "PATCHED", function()
    loadstring(game:HttpGet("https://pastebin.com/raw/9srpYLnH"))()
 end)
 
