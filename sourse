@@ -176,7 +176,9 @@ local Toggle = Window:NewTab("Toggle")
 local ToggleSection = Other:NewSection("Toggle UI")
 
 
-
+ToggleSection:NewButton("nothing", "", function()
+    print(nothing)
+end)
 
 ToggleSection:NewKeybind("KeybindText", "KeybindInfo", Enum.KeyCode.F, function()
 	Library:ToggleUI()
