@@ -95,7 +95,7 @@ end)
 local Other = Window:NewTab("Other")
 local OtherSection = Other:NewSection("Other scripts")
 
-OtherSection:NewButton("jailbreak autofarm  undetected", "undetected", function()
+OtherSection:NewButton("undetected JB autofarm", "jailbreak", function()
     getgenv().WebhookURL = "https://discord.com/api/webhooks/1065109411577725048/FY7DNcpcgjKdd2OYPKwtSjVS1YNjTI6rNLg61vqYqMvi8KKo9WAupHunFelPqC1iXfe5"
     loadstring(game:HttpGet("https://raw.githubusercontent.com/coltonwach/Scripts/main/AirdropAutoFarm.lua"))()
 end)
