@@ -43,15 +43,15 @@ local DollSection = Doll:NewSection("Dollhouse")
 DollSection:NewButton("Spoof Sit", "outdated but still works for kill not void or fling so yk", function()
     game.Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid").Sit = true
 game.Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):SetStateEnabled("Seated", false)
-end
+end)
 
 DollSection:NewButton("OP Antifling", "best antifling i got", function()
    loadstring(game:HttpGetAsync('https://raw.githubusercontent.com/noketchupjustrice/AntiFling/main/AntiFling.lua'))()
-end
+end)
 
 DollSection:NewButton("Claim More", "might be better than the one under me", function()
     loadstring(game:HttpGetAsync('https://riptxde.dev/u/hub/script.lua'))()
-end
+end)
 
 DollSection:NewButton("Claim x10", "execute before clicking the claim button", function()
     for i = 1, 1000 do
@@ -197,7 +197,6 @@ local ToggleSection = Toggle:NewSection("Toggle UI")
 ToggleSection:NewKeybind("KeybindText", "KeybindInfo", Enum.KeyCode.V, function()
 	Library:ToggleUI()
 end)
-
 
 
 
